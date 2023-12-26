@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Masia-Navbar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+      nav {
+        height: 15vh;
+        width: 100vw;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+      .list-item {
+        display: flex;
+      }
+      .list-item ul {
+        display: flex;
+        list-style: none;
+      }
+      .list-item ul li {
+        padding: 0 15px 0 15px;
+        font-weight: bolder;
+        font-size: 14px;
+      }
+      .list-item ul select{
+        border: none;
+        background-color: #fff;
+        width: 90px;
+      }
+      .buttons button:nth-child(1) {
+        padding: 20px 25px 20px 25px;
+        margin: 0 25px 0 25px;
+        background-color: #E5FEFF;
+        border: none;
+        border-radius: 10px;
+    }
+    .buttons button:nth-child(2) {
+        padding: 20px 25px 20px 25px;
+        background-color: #fff;
+        margin: 0 25px 0 25px;
+        color: red;
+        border: 1px solid red;
+        border-radius: 10px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img
+            src="https://masai-website-images.s3.ap-south-1.amazonaws.com/logo.png"
+            alt=""
+          />
+        </div>
+        <div class="list-item">
+          <ul>
+            <select name="courses" id="pet-courses">
+              <option value="">course</option>
+              <option value="full">Full Stack Development</option>
+              <option value="back">Backend</option>
+              <option value="front">Frontend</option>
+            </select>
+            <li>FEES & ISA</li>
+            <li>ABOUT US</li>
+            <li>HIRE FROM US</li>
+            <li>FAQ</li>
+            <li>EVENTS</li>
+          </ul>
+        </div>
+        <div class="buttons">
+          <button>REFER & EARN</button>
+          <button>SIGN UP</button>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
